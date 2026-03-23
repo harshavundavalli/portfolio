@@ -26,7 +26,7 @@ export default function Education() {
         </h2>
 
         <div className="flex flex-col gap-5">
-          {education.map((edu, i) => (
+          {education.map((edu) => (
             <div key={edu.school}
               className="relative p-6 sm:p-8 rounded-2xl bg-dark-700 border border-white/5 hover:border-accent-500/25 transition-all duration-300 group hover:-translate-y-0.5"
               style={{ boxShadow: 'none' }}
@@ -36,11 +36,6 @@ export default function Education() {
               {/* Left accent bar */}
               <div className="absolute left-0 top-6 bottom-6 w-0.5 rounded-full bg-gradient-to-b from-accent-400 to-cyan-400" />
 
-              {i === 0 && (
-                <span className="absolute top-5 right-5 px-3 py-1 rounded-full bg-accent-500/10 text-accent-400 border border-accent-500/20 text-xs font-mono">
-                  Current
-                </span>
-              )}
 
               <div className="flex items-start gap-4 pl-4">
                 <div className="w-11 h-11 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-400 flex-shrink-0">
@@ -53,7 +48,6 @@ export default function Education() {
 
                   <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-4">
                     <span>{edu.location}</span>
-                    <span className="font-mono">{edu.period}</span>
                     <span className="text-green-400 font-semibold">GPA: {edu.gpa}</span>
                   </div>
 
