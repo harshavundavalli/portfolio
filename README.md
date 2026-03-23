@@ -4,7 +4,7 @@ A personal portfolio website built with React, Vite, and Tailwind CSS. Features 
 
 ## Live Demo
 
-[harsha-portfolio.vercel.app](https://harsha-portfolio.vercel.app)
+[harsha-portfolio.vercel.app](https://harshavundavalli.vercel.app)
 
 ## Tech Stack
 
